@@ -1,8 +1,0 @@
-F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Domain\bin\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Domain.deps.json
-F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Domain\bin\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Domain.dll
-F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Domain\bin\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Domain.pdb
-F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Domain\obj\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Domain.csproj.CoreCompileInputs.cache
-F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Domain\obj\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Domain.AssemblyInfoInputs.cache
-F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Domain\obj\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Domain.AssemblyInfo.cs
-F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Domain\obj\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Domain.dll
-F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Domain\obj\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Domain.pdb
