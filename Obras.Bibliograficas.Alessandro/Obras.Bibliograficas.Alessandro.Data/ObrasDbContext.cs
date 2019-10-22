@@ -40,7 +40,9 @@ namespace Obras.Bibliograficas.Alessandro.Data
 
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
-			optionsBuilder.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=EFProviders.InMemory;Trusted_Connection=True;ConnectRetryCount=0");
+			optionsBuilder.UseInMemoryDatabase("InMemoryDbInstance");
+				//.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=EFProviders.InMemory;Trusted_Connection=True;ConnectRetryCount=0");
+			
 		}
 
 		public void Commit()

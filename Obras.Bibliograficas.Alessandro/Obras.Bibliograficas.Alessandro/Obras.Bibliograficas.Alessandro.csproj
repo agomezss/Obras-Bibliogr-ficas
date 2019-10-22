@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Obras.Bibliograficas.Alessandro.Data\Obras.Bibliograficas.Alessandro.Data.csproj" />
+    <ProjectReference Include="..\Obras.Bibliograficas.Alessandro.Ioc\Obras.Bibliograficas.Alessandro.Ioc.csproj" />
   </ItemGroup>
 
 </Project>

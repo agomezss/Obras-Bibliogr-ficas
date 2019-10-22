@@ -4,4 +4,16 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Obras.Bibliograficas.Alessandro.Data\Obras.Bibliograficas.Alessandro.Data.csproj" />
+    <ProjectReference Include="..\Obras.Bibliograficas.Alessandro.Domain\Obras.Bibliograficas.Alessandro.Domain.csproj" />
+    <ProjectReference Include="..\Obras.Bibliograficas.Alessandro.Service\Obras.Bibliograficas.Alessandro.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions">
+      <HintPath>C:\Program Files\dotnet\sdk\NuGetFallbackFolder\microsoft.extensions.dependencyinjection.abstractions\2.2.0\lib\netstandard2.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

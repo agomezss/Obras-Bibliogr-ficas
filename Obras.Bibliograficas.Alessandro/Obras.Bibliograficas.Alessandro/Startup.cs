@@ -13,12 +13,14 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Obras.Bibliograficas.Alessandro.Data;
+using Obras.Bibliograficas.Alessandro.Ioc;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Obras.Bibliograficas.Alessandro
 {
 	public class Startup
 	{
+		public IConfiguration Configuration { get; }
 		public IHostingEnvironment Hosting { get; protected set; }
 
 		public Startup(IConfiguration configuration, IHostingEnvironment env)
@@ -31,8 +33,6 @@ namespace Obras.Bibliograficas.Alessandro
 
 			Configuration = builder.Build();
 		}
-
-		public IConfiguration Configuration { get; }
 
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
@@ -69,6 +69,8 @@ namespace Obras.Bibliograficas.Alessandro
 				var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
 				s.IncludeXmlComments(xmlPath);
 			});
+
+			RegisterServices(services);
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -88,6 +90,11 @@ namespace Obras.Bibliograficas.Alessandro
 			{
 				s.SwaggerEndpoint("/swagger/v1/swagger.json", "API v1.0");
 			});
+		}
+
+		private void RegisterServices(IServiceCollection services)
+		{
+			NativeInjectorBootStrapper.RegisterServices(services);
 		}
 	}
 }

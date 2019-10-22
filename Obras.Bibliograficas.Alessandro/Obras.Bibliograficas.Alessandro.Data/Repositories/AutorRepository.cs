@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Obras.Bibliograficas.Alessandro.Data.Repositories
 {
-	class AutorRepository : IAutorRepository
+	public class AutorRepository : IAutorRepository
 	{
 		protected ObrasDbContext _context { get; set; }
 

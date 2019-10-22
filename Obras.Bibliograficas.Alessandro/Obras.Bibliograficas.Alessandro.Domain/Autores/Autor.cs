@@ -9,10 +9,10 @@ namespace Obras.Bibliograficas.Alessandro.Domain
 	{
 		[Required]
 		[Key]
+		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		public int Id { get; set; }
 
 		[Required]
-		[Key]
 		[StringLength(200)]
 		public string Nome { get; set; }
 
