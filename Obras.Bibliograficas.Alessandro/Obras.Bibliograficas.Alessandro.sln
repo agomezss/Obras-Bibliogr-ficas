@@ -1,0 +1,79 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obras.Bibliograficas.Alessandro", "Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.csproj", "{60E3490D-1750-4164-B39C-FAC594BC7BE5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{19ADF137-2220-43D7-8E9B-3BC930C6B171}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - API", "1 - API", "{5F2E6D42-EC6F-4359-B91D-3554DC60DEF5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Services", "2 - Services", "{4ADA2CA6-BCC0-42B0-BD38-0CFF312458B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{728B4D43-7DEA-4D4A-9B8E-49D39585AE37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{5CF7F8A7-C949-40B2-9E47-240440C3EBAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{15C7A90E-5A3D-47F5-964F-C0520584EEA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obras.Bibliograficas.Alessandro.Service", "Obras.Bibliograficas.Alessandro.Service\Obras.Bibliograficas.Alessandro.Service.csproj", "{7CBA8323-E539-4B7B-A93D-482E8C069E7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obras.Bibliograficas.Alessandro.Data", "Obras.Bibliograficas.Alessandro.Data\Obras.Bibliograficas.Alessandro.Data.csproj", "{FC699A08-CA17-488B-B16D-CEAB03007FD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obras.Bibliograficas.Alessandro.Ioc", "Obras.Bibliograficas.Alessandro.Ioc\Obras.Bibliograficas.Alessandro.Ioc.csproj", "{2849A0BF-45BD-4E62-8769-C036C6E93DB1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obras.Bibliograficas.Alessandro.Domain", "Obras.Bibliograficas.Alessandro.Domain\Obras.Bibliograficas.Alessandro.Domain.csproj", "{8885E981-749E-4B21-861D-AD4391C2DCCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Obras.Bibliograficas.Alessandro.Test", "Obras.Bibliograficas.Alessandro.Test\Obras.Bibliograficas.Alessandro.Test.csproj", "{84F5863C-29DA-4F64-9661-1EBF5C2C3A4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{60E3490D-1750-4164-B39C-FAC594BC7BE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60E3490D-1750-4164-B39C-FAC594BC7BE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60E3490D-1750-4164-B39C-FAC594BC7BE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60E3490D-1750-4164-B39C-FAC594BC7BE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CBA8323-E539-4B7B-A93D-482E8C069E7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CBA8323-E539-4B7B-A93D-482E8C069E7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CBA8323-E539-4B7B-A93D-482E8C069E7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CBA8323-E539-4B7B-A93D-482E8C069E7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC699A08-CA17-488B-B16D-CEAB03007FD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC699A08-CA17-488B-B16D-CEAB03007FD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC699A08-CA17-488B-B16D-CEAB03007FD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC699A08-CA17-488B-B16D-CEAB03007FD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2849A0BF-45BD-4E62-8769-C036C6E93DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2849A0BF-45BD-4E62-8769-C036C6E93DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2849A0BF-45BD-4E62-8769-C036C6E93DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2849A0BF-45BD-4E62-8769-C036C6E93DB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8885E981-749E-4B21-861D-AD4391C2DCCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8885E981-749E-4B21-861D-AD4391C2DCCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8885E981-749E-4B21-861D-AD4391C2DCCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8885E981-749E-4B21-861D-AD4391C2DCCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84F5863C-29DA-4F64-9661-1EBF5C2C3A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84F5863C-29DA-4F64-9661-1EBF5C2C3A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84F5863C-29DA-4F64-9661-1EBF5C2C3A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84F5863C-29DA-4F64-9661-1EBF5C2C3A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{60E3490D-1750-4164-B39C-FAC594BC7BE5} = {5F2E6D42-EC6F-4359-B91D-3554DC60DEF5}
+		{5F2E6D42-EC6F-4359-B91D-3554DC60DEF5} = {19ADF137-2220-43D7-8E9B-3BC930C6B171}
+		{4ADA2CA6-BCC0-42B0-BD38-0CFF312458B9} = {19ADF137-2220-43D7-8E9B-3BC930C6B171}
+		{728B4D43-7DEA-4D4A-9B8E-49D39585AE37} = {19ADF137-2220-43D7-8E9B-3BC930C6B171}
+		{5CF7F8A7-C949-40B2-9E47-240440C3EBAB} = {19ADF137-2220-43D7-8E9B-3BC930C6B171}
+		{7CBA8323-E539-4B7B-A93D-482E8C069E7C} = {4ADA2CA6-BCC0-42B0-BD38-0CFF312458B9}
+		{FC699A08-CA17-488B-B16D-CEAB03007FD8} = {5CF7F8A7-C949-40B2-9E47-240440C3EBAB}
+		{2849A0BF-45BD-4E62-8769-C036C6E93DB1} = {5CF7F8A7-C949-40B2-9E47-240440C3EBAB}
+		{8885E981-749E-4B21-861D-AD4391C2DCCC} = {728B4D43-7DEA-4D4A-9B8E-49D39585AE37}
+		{84F5863C-29DA-4F64-9661-1EBF5C2C3A4C} = {15C7A90E-5A3D-47F5-964F-C0520584EEA7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9AAA640-A007-4B16-A702-A73241EA2E73}
+	EndGlobalSection
+EndGlobal
