@@ -9,6 +9,10 @@ namespace Obras.Bibliograficas.Alessandro.Domain
 	{
 		[Required]
 		[Key]
+		public int Id { get; set; }
+
+		[Required]
+		[Key]
 		[StringLength(200)]
 		public string NomeCompleto { get; set; }
 

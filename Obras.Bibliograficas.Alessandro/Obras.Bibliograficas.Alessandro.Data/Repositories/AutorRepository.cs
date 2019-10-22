@@ -2,30 +2,41 @@
 using Obras.Bibliograficas.Alessandro.Domain.Autores;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace Obras.Bibliograficas.Alessandro.Data.Repositories
 {
 	class AutorRepository : IAutorRepository
 	{
+		protected ObrasDbContext _context { get; set; }
+
+		public AutorRepository(ObrasDbContext context)
+		{
+			_context = context;
+		}
 		public void AlterarAutor(Autor autor)
 		{
-			throw new NotImplementedException();
+			_context.Autores.Update(autor);
+			_context.SaveChanges();
 		}
 
 		public void CadastrarAutor(Autor autor)
 		{
-			throw new NotImplementedException();
+			_context.Autores.Add(autor);
+			_context.SaveChanges();
 		}
 
 		public IEnumerable<Autor> ListarAutores(Autor autor)
 		{
-			throw new NotImplementedException();
+			return _context.Autores.ToList();
 		}
 
 		public void RemoverAutor(Autor autor)
 		{
-			throw new NotImplementedException();
+			var obj = _context.Autores.FirstOrDefault(a => a.Id == autor.Id);
+			_context.Autores.Remove(obj);
+			_context.SaveChanges();
 		}
 	}
 }

@@ -90,6 +90,9 @@
       },
       "Obras.Bibliograficas.Alessandro.Data/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "2.2.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "2.2.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0",
           "Obras.Bibliograficas.Alessandro.Domain": "1.0.0"
         },
         "runtime": {

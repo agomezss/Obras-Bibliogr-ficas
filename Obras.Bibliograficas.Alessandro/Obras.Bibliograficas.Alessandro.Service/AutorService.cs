@@ -7,24 +7,31 @@ namespace Obras.Bibliograficas.Alessandro.Service
 {
 	public class AutorService : IAutorService
 	{
+		protected IAutorRepository _repo { get; set; }
+
+		public AutorService(IAutorRepository repository)
+		{
+			_repo = repository;
+		}
+
 		public void AlterarAutor(Autor autor)
 		{
-			throw new NotImplementedException();
+			_repo.AlterarAutor(autor);
 		}
 
 		public void CadastrarAutor(Autor autor)
 		{
-			throw new NotImplementedException();
+			_repo.CadastrarAutor(autor);
 		}
 
 		public IEnumerable<Autor> ListarAutores(Autor autor)
 		{
-			throw new NotImplementedException();
+			return _repo.ListarAutores(autor);
 		}
 
 		public void RemoverAutor(Autor autor)
 		{
-			throw new NotImplementedException();
+			_repo.RemoverAutor(autor);
 		}
 	}
 }
