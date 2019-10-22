@@ -24,7 +24,12 @@ namespace Obras.Bibliograficas.Alessandro.Service
 			_repo.Cadastrar(autor);
 		}
 
-		public IEnumerable<Autor> Listar()
+		public Autor Buscar(Autor autor)
+		{
+			return _repo.Buscar(autor);
+		}
+
+		public List<Autor> Listar()
 		{
 			return _repo.Listar();
 		}

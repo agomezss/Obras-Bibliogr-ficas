@@ -27,11 +27,11 @@ namespace Obras.Bibliograficas.Alessandro.Controllers
 		}
 
 		// GET api/autores/5
-		//[HttpGet("{id}")]
-		//public ActionResult<Autor> Get(int id)
-		//{
-		//	return _service.Buscar(id);
-		//}
+		[HttpGet("{id}")]
+		public ActionResult<Autor> Get(int id)
+		{
+			return _service.Buscar(new Autor { Id = id });
+		}
 
 		// POST api/autores
 		[HttpPost]

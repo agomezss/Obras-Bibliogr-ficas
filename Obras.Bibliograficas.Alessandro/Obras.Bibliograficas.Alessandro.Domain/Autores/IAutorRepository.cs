@@ -6,9 +6,10 @@ namespace Obras.Bibliograficas.Alessandro.Domain.Autores
 {
 	public interface IAutorRepository
 	{
-		IEnumerable<Autor> Listar();
+		List<Autor> Listar();
 		void Cadastrar(Autor autor);
 		void Alterar(Autor autor);
+		Autor Buscar(Autor autor);
 		void Remover(Autor autor);
 	}
 }

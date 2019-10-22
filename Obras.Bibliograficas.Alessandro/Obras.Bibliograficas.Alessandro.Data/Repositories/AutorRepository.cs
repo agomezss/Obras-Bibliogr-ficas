@@ -27,9 +27,14 @@ namespace Obras.Bibliograficas.Alessandro.Data.Repositories
 			_context.SaveChanges();
 		}
 
-		public IEnumerable<Autor> Listar()
+		public List<Autor> Listar()
 		{
 			return _context.Autores.ToList();
+		}
+
+		public Autor Buscar(Autor autor)
+		{
+			return _context.Autores.FirstOrDefault(a => a.Id == autor.Id);
 		}
 
 		public void Remover(Autor autor)
