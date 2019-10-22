@@ -15,24 +15,24 @@ namespace Obras.Bibliograficas.Alessandro.Data.Repositories
 		{
 			_context = context;
 		}
-		public void AlterarAutor(Autor autor)
+		public void Alterar(Autor autor)
 		{
 			_context.Autores.Update(autor);
 			_context.SaveChanges();
 		}
 
-		public void CadastrarAutor(Autor autor)
+		public void Cadastrar(Autor autor)
 		{
 			_context.Autores.Add(autor);
 			_context.SaveChanges();
 		}
 
-		public IEnumerable<Autor> ListarAutores(Autor autor)
+		public IEnumerable<Autor> Listar()
 		{
 			return _context.Autores.ToList();
 		}
 
-		public void RemoverAutor(Autor autor)
+		public void Remover(Autor autor)
 		{
 			var obj = _context.Autores.FirstOrDefault(a => a.Id == autor.Id);
 			_context.Autores.Remove(obj);

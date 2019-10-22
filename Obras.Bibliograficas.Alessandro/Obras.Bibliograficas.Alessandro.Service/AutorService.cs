@@ -14,24 +14,24 @@ namespace Obras.Bibliograficas.Alessandro.Service
 			_repo = repository;
 		}
 
-		public void AlterarAutor(Autor autor)
+		public void Alterar(Autor autor)
 		{
-			_repo.AlterarAutor(autor);
+			_repo.Alterar(autor);
 		}
 
-		public void CadastrarAutor(Autor autor)
+		public void Cadastrar(Autor autor)
 		{
-			_repo.CadastrarAutor(autor);
+			_repo.Cadastrar(autor);
 		}
 
-		public IEnumerable<Autor> ListarAutores(Autor autor)
+		public IEnumerable<Autor> Listar()
 		{
-			return _repo.ListarAutores(autor);
+			return _repo.Listar();
 		}
 
-		public void RemoverAutor(Autor autor)
+		public void Remover(Autor autor)
 		{
-			_repo.RemoverAutor(autor);
+			_repo.Remover(autor);
 		}
 	}
 }
