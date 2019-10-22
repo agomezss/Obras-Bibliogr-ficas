@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace Obras.Bibliograficas.Alessandro.Domain.Autores.Nome
 {
@@ -8,7 +8,7 @@ namespace Obras.Bibliograficas.Alessandro.Domain.Autores.Nome
 	{
 		public string Aplicar(string nome)
 		{
-			return "Not Implemented";
+			return nome;
 		}
 	}
 }
