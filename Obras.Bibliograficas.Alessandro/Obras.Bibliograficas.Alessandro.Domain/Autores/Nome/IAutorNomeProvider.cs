@@ -20,10 +20,9 @@ namespace Obras.Bibliograficas.Alessandro.Domain.Autores
 			return nome;
 		}
 
-		protected IAutorNomeProvider IncluirRegra(IAutorNomeRegra regra)
+		protected void IncluirRegra(IAutorNomeRegra regra)
 		{
 			Regras.Add(regra);
-			return this;
 		}
 	}
 }
