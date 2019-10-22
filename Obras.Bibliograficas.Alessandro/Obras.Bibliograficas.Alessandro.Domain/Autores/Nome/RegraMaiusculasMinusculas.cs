@@ -8,7 +8,7 @@ namespace Obras.Bibliograficas.Alessandro.Domain.Autores.Nome
 	{
 		public string Aplicar(string nome)
 		{
-			throw new NotImplementedException();
+			return nome.ToUpper();
 		}
 	}
 }

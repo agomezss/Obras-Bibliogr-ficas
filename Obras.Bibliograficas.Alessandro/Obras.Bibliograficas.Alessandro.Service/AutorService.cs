@@ -1,6 +1,5 @@
 ﻿using Obras.Bibliograficas.Alessandro.Domain;
 using Obras.Bibliograficas.Alessandro.Domain.Autores;
-using System;
 using System.Collections.Generic;
 
 namespace Obras.Bibliograficas.Alessandro.Service
@@ -8,20 +7,24 @@ namespace Obras.Bibliograficas.Alessandro.Service
 	public class AutorService : IAutorService
 	{
 		protected IAutorRepository _repo { get; set; }
+		IAutorNomeProvider _provedorNomeAutoral;
 
-		public AutorService(IAutorRepository repository)
+		public AutorService(IAutorRepository repository, IAutorNomeProvider provedorNomeAutoral)
 		{
 			_repo = repository;
+			_provedorNomeAutoral = provedorNomeAutoral;
 		}
 
-		public void Alterar(Autor autor)
+		public Autor Alterar(Autor autor)
 		{
-			_repo.Alterar(autor);
+			autor.FormatarNome(_provedorNomeAutoral);
+			return _repo.Alterar(autor);
 		}
 
-		public void Cadastrar(Autor autor)
+		public Autor Cadastrar(Autor autor)
 		{
-			_repo.Cadastrar(autor);
+			autor.FormatarNome(_provedorNomeAutoral);
+			return _repo.Cadastrar(autor);
 		}
 
 		public Autor Buscar(Autor autor)

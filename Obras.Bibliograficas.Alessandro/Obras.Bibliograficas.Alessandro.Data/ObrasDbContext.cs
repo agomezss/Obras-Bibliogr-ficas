@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Extensions.Configuration;
-//using Microsoft.AspNetCore.Hosting;
 using System.IO;
 using Obras.Bibliograficas.Alessandro.Domain;
 
@@ -9,14 +8,8 @@ namespace Obras.Bibliograficas.Alessandro.Data
 {
 	public class ObrasDbContext : DbContext
 	{
-		//private readonly IHostingEnvironment _env;
 		private IDbContextTransaction _transaction;
 		private bool IsTesting;
-
-		//public ObrasDbContext(IHostingEnvironment env) : base()
-		//{
-		//	_env = env;
-		//}
 
 		public ObrasDbContext() : base()
 		{
@@ -41,8 +34,6 @@ namespace Obras.Bibliograficas.Alessandro.Data
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
 			optionsBuilder.UseInMemoryDatabase("InMemoryDbInstance");
-				//.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=EFProviders.InMemory;Trusted_Connection=True;ConnectRetryCount=0");
-			
 		}
 
 		public void Commit()

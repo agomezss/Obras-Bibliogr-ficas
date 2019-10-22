@@ -1,9 +1,7 @@
 ﻿using Obras.Bibliograficas.Alessandro.Domain;
 using Obras.Bibliograficas.Alessandro.Domain.Autores;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Obras.Bibliograficas.Alessandro.Data.Repositories
 {
@@ -15,16 +13,18 @@ namespace Obras.Bibliograficas.Alessandro.Data.Repositories
 		{
 			_context = context;
 		}
-		public void Alterar(Autor autor)
+		public Autor Alterar(Autor autor)
 		{
 			_context.Autores.Update(autor);
 			_context.SaveChanges();
+			return autor;
 		}
 
-		public void Cadastrar(Autor autor)
+		public Autor Cadastrar(Autor autor)
 		{
 			_context.Autores.Add(autor);
 			_context.SaveChanges();
+			return autor;
 		}
 
 		public List<Autor> Listar()

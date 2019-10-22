@@ -16,10 +16,12 @@ namespace Obras.Bibliograficas.Alessandro.Domain
 		[StringLength(200)]
 		public string Nome { get; set; }
 
+		[StringLength(200)]
+		public string NomeFormatado { get; set; }
 
-		public void FormatarNome(string nome, IAutorNomeProvider provider)
+		public void FormatarNome(IAutorNomeProvider provedorNomeAutoral)
 		{
-			Nome = provider.AplicarRegrasNome(nome);
+			NomeFormatado = provedorNomeAutoral.AplicarRegrasNome(Nome);
 		}
 	}
 }

@@ -6,10 +6,12 @@ namespace Obras.Bibliograficas.Alessandro.Domain.Autores
 {
 	public abstract class IAutorNomeProvider
 	{
-		protected List<IAutorNomeRegra> Regras { get; set; }
+		protected List<IAutorNomeRegra> Regras = new List<IAutorNomeRegra>();
 
-		public  string AplicarRegrasNome(string nome)
+		public string AplicarRegrasNome(string nome)
 		{
+			if (Regras == null) return nome;
+
 			foreach (var regra in Regras)
 			{
 				nome = regra.Aplicar(nome);
