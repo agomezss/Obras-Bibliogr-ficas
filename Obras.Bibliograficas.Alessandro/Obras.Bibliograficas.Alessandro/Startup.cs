@@ -11,15 +11,24 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Obras.Bibliograficas.Alessandro.Data;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Obras.Bibliograficas.Alessandro
 {
 	public class Startup
 	{
-		public Startup(IConfiguration configuration)
+		public IHostingEnvironment Hosting { get; protected set; }
+
+		public Startup(IConfiguration configuration, IHostingEnvironment env)
 		{
-			Configuration = configuration;
+			var builder = new ConfigurationBuilder()
+				.SetBasePath(env.ContentRootPath)
+				.AddJsonFile("appsettings.json", true, true);
+
+			builder.AddEnvironmentVariables();
+
+			Configuration = builder.Build();
 		}
 
 		public IConfiguration Configuration { get; }
@@ -27,6 +36,28 @@ namespace Obras.Bibliograficas.Alessandro
 		// This method gets called by the runtime. Use this method to add services to the container.
 		public void ConfigureServices(IServiceCollection services)
 		{
+			var connectionString = Configuration.GetConnectionString("DefaultConnection");
+
+			//services.AddDbContext<ObrasDbContext>(cfg =>
+			//{
+			//	//cfg.Use
+			//});
+
+
+			services.AddCors(options =>
+			{
+				options.AddPolicy("AllowAllHeadersAndMethods",
+					builder =>
+					{
+						builder
+						//.AllowAnyOrigin()
+						.AllowAnyMethod()
+						.AllowAnyHeader()
+						.AllowCredentials();
+					});
+			});
+
+
 			services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
 			services.AddSwaggerGen(s =>
@@ -52,6 +83,8 @@ namespace Obras.Bibliograficas.Alessandro
 			{
 				app.UseDeveloperExceptionPage();
 			}
+
+			app.UseCors("AllowAllHeadersAndMethods");
 
 			app.UseMvc();
 

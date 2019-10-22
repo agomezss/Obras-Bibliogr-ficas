@@ -4481,6 +4481,29 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "Obras.Bibliograficas.Alessandro.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Obras.Bibliograficas.Alessandro.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Obras.Bibliograficas.Alessandro.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Obras.Bibliograficas.Alessandro.Data.dll": {}
+        }
+      },
+      "Obras.Bibliograficas.Alessandro.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/Obras.Bibliograficas.Alessandro.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Obras.Bibliograficas.Alessandro.Domain.dll": {}
+        }
       }
     }
   },
@@ -12162,6 +12185,16 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "Obras.Bibliograficas.Alessandro.Data/1.0.0": {
+      "type": "project",
+      "path": "../Obras.Bibliograficas.Alessandro.Data/Obras.Bibliograficas.Alessandro.Data.csproj",
+      "msbuildProject": "../Obras.Bibliograficas.Alessandro.Data/Obras.Bibliograficas.Alessandro.Data.csproj"
+    },
+    "Obras.Bibliograficas.Alessandro.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Obras.Bibliograficas.Alessandro.Domain/Obras.Bibliograficas.Alessandro.Domain.csproj",
+      "msbuildProject": "../Obras.Bibliograficas.Alessandro.Domain/Obras.Bibliograficas.Alessandro.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12169,6 +12202,7 @@
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
+      "Obras.Bibliograficas.Alessandro.Data >= 1.0.0",
       "Swashbuckle.AspNetCore.Swagger >= 4.0.1",
       "Swashbuckle.AspNetCore.SwaggerGen >= 4.0.1",
       "Swashbuckle.AspNetCore.SwaggerUi >= 4.0.1"
@@ -12203,7 +12237,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\Git\\Obras-Bibliogr-ficas\\Obras.Bibliograficas.Alessandro\\Obras.Bibliograficas.Alessandro.Data\\Obras.Bibliograficas.Alessandro.Data.csproj": {
+              "projectPath": "F:\\Git\\Obras-Bibliogr-ficas\\Obras.Bibliograficas.Alessandro\\Obras.Bibliograficas.Alessandro.Data\\Obras.Bibliograficas.Alessandro.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

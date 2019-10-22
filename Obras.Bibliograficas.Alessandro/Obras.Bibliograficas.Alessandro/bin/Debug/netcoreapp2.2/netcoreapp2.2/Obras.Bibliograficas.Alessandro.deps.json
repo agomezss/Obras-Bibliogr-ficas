@@ -27,6 +27,7 @@
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
+          "Obras.Bibliograficas.Alessandro.Data": "1.0.0",
           "Swashbuckle.AspNetCore.Swagger": "4.0.1",
           "Swashbuckle.AspNetCore.SwaggerGen": "4.0.1",
           "Swashbuckle.AspNetCore.SwaggerUI": "4.0.1"
@@ -85,6 +86,25 @@
         },
         "compile": {
           "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        }
+      },
+      "Obras.Bibliograficas.Alessandro.Data/1.0.0": {
+        "dependencies": {
+          "Obras.Bibliograficas.Alessandro.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Obras.Bibliograficas.Alessandro.Data.dll": {}
+        },
+        "compile": {
+          "Obras.Bibliograficas.Alessandro.Data.dll": {}
+        }
+      },
+      "Obras.Bibliograficas.Alessandro.Domain/1.0.0": {
+        "runtime": {
+          "Obras.Bibliograficas.Alessandro.Domain.dll": {}
+        },
+        "compile": {
+          "Obras.Bibliograficas.Alessandro.Domain.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3309,6 +3329,16 @@
       "sha512": "sha512-d2U7NyV0e4UhyCzAVK9QHm0iz2QoVPUa9XzJ/Gr0rn/jBZWFpVLvigKv0vxFzO2E793sY605+4h885gvCdKSxQ==",
       "path": "swashbuckle.aspnetcore.swaggerui/4.0.1",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.4.0.1.nupkg.sha512"
+    },
+    "Obras.Bibliograficas.Alessandro.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Obras.Bibliograficas.Alessandro.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

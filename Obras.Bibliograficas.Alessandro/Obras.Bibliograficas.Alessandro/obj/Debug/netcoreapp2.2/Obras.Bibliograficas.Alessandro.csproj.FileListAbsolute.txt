@@ -18,3 +18,8 @@ F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas
 F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro\bin\Debug\netcoreapp2.2\netcoreapp2.2\Obras.Bibliograficas.Alessandro.dll
 F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro\bin\Debug\netcoreapp2.2\netcoreapp2.2\Obras.Bibliograficas.Alessandro.pdb
 F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro\bin\Debug\netcoreapp2.2\netcoreapp2.2\Obras.Bibliograficas.Alessandro.xml
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro\bin\Debug\netcoreapp2.2\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Data.dll
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro\bin\Debug\netcoreapp2.2\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Domain.dll
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro\bin\Debug\netcoreapp2.2\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Data.pdb
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro\bin\Debug\netcoreapp2.2\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Domain.pdb
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro\obj\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.csproj.CopyComplete

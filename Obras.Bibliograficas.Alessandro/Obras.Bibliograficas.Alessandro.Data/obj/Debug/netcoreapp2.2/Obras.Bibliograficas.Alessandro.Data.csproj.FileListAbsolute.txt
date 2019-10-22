@@ -1,0 +1,12 @@
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Data\bin\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Data.deps.json
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Data\bin\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Data.dll
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Data\bin\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Data.pdb
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Data\bin\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Domain.dll
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Data\bin\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Domain.pdb
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Data\obj\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Data.csprojAssemblyReference.cache
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Data\obj\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Data.csproj.CoreCompileInputs.cache
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Data\obj\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Data.AssemblyInfoInputs.cache
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Data\obj\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Data.AssemblyInfo.cs
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Data\obj\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Data.csproj.CopyComplete
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Data\obj\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Data.dll
+F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro.Data\obj\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.Data.pdb
