@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Obras.Bibliograficas.Alessandro.Domain.Autores.Nome
 {
-	public class RegraOrdenacaoPronomeTratamento : IAutorNomeRegra
+	public class RegraOrdenacao : IAutorNomeRegra
 	{
 		public string Aplicar(string nome)
 		{

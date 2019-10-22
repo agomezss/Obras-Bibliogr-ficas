@@ -6,8 +6,7 @@ namespace Obras.Bibliograficas.Alessandro.Domain.Autores.Nome
 	{
 		public AutorNomeProviderPadrao()
 		{
-			IncluirRegra(Activator.CreateInstance<RegraRemocaoPreposicoes>());
-			IncluirRegra(Activator.CreateInstance<RegraOrdenacaoPronomeTratamento>());
+			IncluirRegra(Activator.CreateInstance<RegraOrdenacao>());
 			IncluirRegra(Activator.CreateInstance<RegraMaiusculasMinusculas>());
 		}
 	}
