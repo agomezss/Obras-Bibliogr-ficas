@@ -16,27 +16,27 @@ namespace Obras.Bibliograficas.Alessandro.Controllers
 			_service = service;
 		}
 
-		// GET api/autores
+		// GET api/autor
 		[HttpGet]
 		public ActionResult<IEnumerable<Autor>> Get()
 		{
 			return _service.Listar();
 		}
 
-		// GET api/autores/5
+		// GET api/autor/5
 		[HttpGet("{id}")]
 		public ActionResult<Autor> Get(int id)
 		{
 			return _service.Buscar(new Autor { Id = id });
 		}
 
-		// POST api/autores
+		// POST api/autor
 		[HttpPost]
-		public ActionResult Post([FromBody] Autor anuncio)
+		public ActionResult Post([FromBody] Autor autor)
 		{
 			if (ModelState.IsValid)
 			{
-				_service.Cadastrar(anuncio);
+				_service.Cadastrar(autor);
 				return Ok();
 			}
 			else
@@ -45,14 +45,14 @@ namespace Obras.Bibliograficas.Alessandro.Controllers
 			};
 		}
 
-		// PUT api/autores/5
+		// PUT api/autor/5
 		[HttpPut("{id}")]
-		public ActionResult Put(int id, [FromBody] Autor anuncio)
+		public ActionResult Put(int id, [FromBody] Autor autor)
 		{
 			if (ModelState.IsValid)
 			{
-				_service.Alterar(anuncio);
-				return Ok(anuncio);
+				_service.Alterar(autor);
+				return Ok(autor);
 			}
 			else
 			{
@@ -60,7 +60,7 @@ namespace Obras.Bibliograficas.Alessandro.Controllers
 			};
 		}
 
-		// DELETE api/autores/5
+		// DELETE api/autor/5
 		[HttpDelete("{id}")]
 		public ActionResult Delete(int id)
 		{

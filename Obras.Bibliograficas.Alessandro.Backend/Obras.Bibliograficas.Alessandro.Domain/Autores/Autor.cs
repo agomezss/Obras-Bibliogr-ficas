@@ -7,7 +7,6 @@ namespace Obras.Bibliograficas.Alessandro.Domain
 	[Table("Autor")]
 	public class Autor
 	{
-		[Required]
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		public int Id { get; set; }
@@ -16,7 +15,6 @@ namespace Obras.Bibliograficas.Alessandro.Domain
 		[StringLength(200)]
 		public string Nome { get; set; }
 
-		[StringLength(200)]
 		public string NomeFormatado { get; set; }
 
 		public void FormatarNome(AutorNomeProvider provedorNomeAutoral)
