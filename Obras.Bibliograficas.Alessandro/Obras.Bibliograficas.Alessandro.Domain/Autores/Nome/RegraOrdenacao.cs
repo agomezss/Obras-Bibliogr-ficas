@@ -19,10 +19,21 @@ namespace Obras.Bibliograficas.Alessandro.Domain.Autores.Nome
 			if (componenteFamiliar != null) componentesNome.Pop();
 
 			var novoNome = new StringBuilder();
-			novoNome.Append(componentesNome.Pop());
 
-			if (componenteFamiliar != null)
-				novoNome.Append($" {componenteFamiliar}");
+			if (componentesNome.Count > 1)
+			{
+				novoNome.Append(componentesNome.Pop());
+
+				if (componenteFamiliar != null)
+					novoNome.Append($" {componenteFamiliar}");
+			}
+			else
+			{
+				if (componenteFamiliar != null)
+					novoNome.Append($"{componenteFamiliar}");
+				else
+					novoNome.Append(componentesNome.Pop());
+			}
 
 			novoNome.Append(",");
 

@@ -75,5 +75,19 @@ namespace Obras.Bibliograficas.Alessandro.Test
 			// Assert
 			Assert.Equal("GOMEZ FILHO, Alessandro", resultado);
 		}
+
+		[Fact]
+		public void TestNomeComSobrenomeFamiliar()
+		{
+			// Arrange
+			var entrada = "alessandro filho";
+			var regra = new AutorNomeProviderPadrao();
+
+			// Act
+			var resultado = regra.AplicarRegrasNome(entrada);
+
+			// Assert
+			Assert.Equal("FILHO, Alessandro", resultado);
+		}
 	}
 }
