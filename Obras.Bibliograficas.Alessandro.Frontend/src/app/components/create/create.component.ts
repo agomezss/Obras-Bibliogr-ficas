@@ -13,22 +13,25 @@ export class CreateComponent {
 
 	title = 'Adicionar Autor';
 	angForm: FormGroup;
-	autor: Autor;
+	autores: Autor[];
+	total: number = 1;
 
 	constructor(private service: AutorService, private fb: FormBuilder, private router: Router) {
 
-		this.autor = new Autor();
-		this.createForm();
 	}
 
-	createForm() {
-		this.angForm = this.fb.group({
-			nome: ['', Validators.required]
-		});
+	updateTotal() {
+		this.autores = [];
+
+		for (let index = 0; index < this.total; index++) {
+			let novoAutor = new Autor();
+			this.autores.push(novoAutor);
+		}
 	}
+
 
 	add() {
-		this.service.add(this.autor);
+		this.service.add(this.autores);
 		this.router.navigate(['index']);
 	}
 }

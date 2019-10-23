@@ -32,11 +32,15 @@ namespace Obras.Bibliograficas.Alessandro.Controllers
 
 		// POST api/autor
 		[HttpPost]
-		public ActionResult Post([FromBody] Autor autor)
+		public ActionResult Post([FromBody] Autor[] autor)
 		{
 			if (ModelState.IsValid)
 			{
-				_service.Cadastrar(autor);
+				foreach (var item in autor)
+				{
+					_service.Cadastrar(item);
+				}
+				
 				return Ok();
 			}
 			else
