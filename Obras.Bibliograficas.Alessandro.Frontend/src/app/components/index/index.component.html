@@ -26,17 +26,3 @@
     </tr>
   </tfoot>
 </table>
-
-
-<table class="table table-hover" *ngIf="printVisible">
-  <thead>
-    <tr>
-      <td>Nome Formatado</td>
-    </tr>
-  </thead>
-  <tbody id="print-section" >
-    <tr *ngFor="let autor of autores">
-      <td>{{ autor.nomeFormatado }}</td>
-    </tr>
-  </tbody>
-</table>
