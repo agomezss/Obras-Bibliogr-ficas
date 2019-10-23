@@ -1,0 +1,19 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    {{ title }}
+  </div>
+  <div class="panel-body">
+    <form [formGroup]="angForm" novalidate>
+      <div class="form-group">
+        <label class="col-md-4">Nome</label>
+        <input type="text" class="form-control" formControlName="nome" #nome [(ngModel)]="autor.nome" />
+      </div>
+      <div *ngIf="angForm.controls['nome'].invalid && (angForm.controls['nome'].dirty || angForm.controls['nome'].touched)"
+        class="alert alert-danger">
+        <div *ngIf="angForm.controls['nome'].errors.required">
+          Nome obrigatório.
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

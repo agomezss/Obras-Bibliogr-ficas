@@ -1,0 +1,20 @@
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <td>Id</td>
+      <td>Nome</td>
+      <td>Nome Formatado</td>
+      <td colspan="2">Ações</td>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let autor of autores">
+      <td>{{ autor.id }}</td>
+      <td>{{ autor.nome }}</td>
+      <td>{{ autor.nomeFormatado }}</td>
+      <td><a [routerLink]="['/edit', autor.id]" class="btn btn-primary">Editar</a></td>
+      <td><button (click)="delete(autor.id)" class="btn btn-danger">Excluir</button></td>
+    </tr>
+  </tbody>
+</table>
