@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro\Obras.Bibliograficas.Alessandro\bin\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.xml</DocumentationFile>
+    <DocumentationFile>F:\Git\Obras-Bibliogr-ficas\Obras.Bibliograficas.Alessandro.Backend\Obras.Bibliograficas.Alessandro\bin\Debug\netcoreapp2.2\Obras.Bibliograficas.Alessandro.xml</DocumentationFile>
     <OutputPath>bin\Debug\netcoreapp2.2\</OutputPath>
   </PropertyGroup>
 
