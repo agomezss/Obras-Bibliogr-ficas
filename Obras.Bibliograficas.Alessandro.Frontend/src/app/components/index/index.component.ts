@@ -27,10 +27,48 @@ export class IndexComponent implements OnInit, AfterViewInit {
 			this.autores = res;
 		});
 	}
-	
+
 	delete(id) {
 		this.service.delete(id).subscribe(res => {
 			this.getAutores();
 		});
-	  }
+	}
+
+	print(): void {
+
+		let popupWin = window.open('', '_blank', 'top=0,left=0,height=100%,width=auto');
+		let autoresHtml = '';
+
+		this.autores.forEach(element => {
+
+			if(!element && !element.nomeFormatado) return;
+
+			autoresHtml += `<tr>
+				<td>${element.nomeFormatado}</td>
+			</tr>`;
+		});
+
+		popupWin.document.open();
+		popupWin.document.write(`
+			<html>
+				<body>
+					<h1>Autores</h1>
+					<table>
+						<thead>
+						<tr>
+							<td>Nome do autor</td>
+						</tr>
+						</thead>
+						<tbody>
+							${autoresHtml}
+						</tbody>
+					</table>
+				</body>
+			</html>`
+		);
+
+		popupWin.document.close();
+		popupWin.print();
+		popupWin.close();
+	}
 }
