@@ -2,7 +2,7 @@
 
 namespace Obras.Bibliograficas.Alessandro.Domain.Autores
 {
-	public abstract class IAutorNomeProvider
+	public abstract class AutorNomeProvider
 	{
 		protected List<IAutorNomeRegra> Regras = new List<IAutorNomeRegra>();
 

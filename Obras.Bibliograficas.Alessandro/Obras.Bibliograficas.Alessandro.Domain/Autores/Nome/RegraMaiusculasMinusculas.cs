@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Text;
 
 namespace Obras.Bibliograficas.Alessandro.Domain.Autores.Nome
 {
@@ -17,24 +18,32 @@ namespace Obras.Bibliograficas.Alessandro.Domain.Autores.Nome
 		{
 			if (!nome.Contains(",")) return nome.ToUpper();
 
-			var posicoesNome = nome.Split(',');
-			posicoesNome[0] = posicoesNome[0].ToUpper();
+			var componentesNome = nome.Split(',');
+			componentesNome[0] = componentesNome[0].ToUpper();
 
-			for (int i = 1; i < posicoesNome.Length && posicoesNome.Length > 1; i++)
+			var componentesSecundarios = componentesNome[1].Split(' ');
+
+			for (int i = 0; i < componentesSecundarios.Length && componentesSecundarios.Length > 1; i++)
 			{
-				if (preposicoes.Contains(posicoesNome[i]))
+				if (preposicoes.Contains(componentesSecundarios[i]))
 					continue;
 
-				if (posicoesNome[i].Length <= 1)
+				if (componentesSecundarios[i].Length <= 1)
 				{
-					posicoesNome[i] = posicoesNome[i].ToUpper();
+					componentesSecundarios[i] = componentesSecundarios[i].ToUpper();
 					continue;
 				}
 
-				posicoesNome[i] = posicoesNome[i].Substring(0, 1).ToUpper() + posicoesNome[i].Substring(1).ToLower();
+				componentesSecundarios[i] = componentesSecundarios[i].Substring(0, 1).ToUpper() + 
+											componentesSecundarios[i].Substring(1).ToLower();
 			}
 
-			return string.Join(',', posicoesNome);
+			var novoNome = new StringBuilder();
+			novoNome.Append(componentesNome[0]);
+			novoNome.Append(",");
+			novoNome.Append(string.Join(' ', componentesSecundarios));
+
+			return novoNome.ToString();
 		}
 	}
 }

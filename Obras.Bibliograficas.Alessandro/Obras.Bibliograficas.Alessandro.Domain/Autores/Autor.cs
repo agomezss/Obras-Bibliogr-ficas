@@ -19,7 +19,7 @@ namespace Obras.Bibliograficas.Alessandro.Domain
 		[StringLength(200)]
 		public string NomeFormatado { get; set; }
 
-		public void FormatarNome(IAutorNomeProvider provedorNomeAutoral)
+		public void FormatarNome(AutorNomeProvider provedorNomeAutoral)
 		{
 			NomeFormatado = provedorNomeAutoral.AplicarRegrasNome(Nome);
 		}

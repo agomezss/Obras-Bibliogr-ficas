@@ -19,7 +19,7 @@ namespace Obras.Bibliograficas.Alessandro.Ioc
 			services.AddScoped<IAutorRepository, AutorRepository>();
 
 			// Rule providers - Regras de nome de autores (Atua mais ou menos como um feature flag)
-			services.AddScoped<IAutorNomeProvider, AutorNomeProviderPadrao>();
+			services.AddScoped<AutorNomeProvider, AutorNomeProviderPadrao>();
 
 			// Infra - Data
 			services.AddScoped<ObrasDbContext>();

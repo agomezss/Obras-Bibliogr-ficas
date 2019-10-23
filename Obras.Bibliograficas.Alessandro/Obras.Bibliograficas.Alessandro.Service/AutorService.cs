@@ -7,9 +7,9 @@ namespace Obras.Bibliograficas.Alessandro.Service
 	public class AutorService : IAutorService
 	{
 		protected IAutorRepository _repo { get; set; }
-		IAutorNomeProvider _provedorNomeAutoral;
+		AutorNomeProvider _provedorNomeAutoral;
 
-		public AutorService(IAutorRepository repository, IAutorNomeProvider provedorNomeAutoral)
+		public AutorService(IAutorRepository repository, AutorNomeProvider provedorNomeAutoral)
 		{
 			_repo = repository;
 			_provedorNomeAutoral = provedorNomeAutoral;

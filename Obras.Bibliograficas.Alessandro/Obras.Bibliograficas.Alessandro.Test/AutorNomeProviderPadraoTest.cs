@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Obras.Bibliograficas.Alessandro.Test
 {
-	public class UnitTest1
+	public class AutorNomeProviderPadraoTest
 	{
 		[Fact]
 		public void Test1()

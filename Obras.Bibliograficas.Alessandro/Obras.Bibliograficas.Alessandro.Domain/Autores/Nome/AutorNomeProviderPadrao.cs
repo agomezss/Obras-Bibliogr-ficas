@@ -2,7 +2,7 @@
 
 namespace Obras.Bibliograficas.Alessandro.Domain.Autores.Nome
 {
-	public class AutorNomeProviderPadrao : IAutorNomeProvider
+	public class AutorNomeProviderPadrao : AutorNomeProvider
 	{
 		public AutorNomeProviderPadrao()
 		{
