@@ -27,4 +27,10 @@ export class IndexComponent implements OnInit, AfterViewInit {
 			this.autores = res;
 		});
 	}
+	
+	delete(id) {
+		this.service.delete(id).subscribe(res => {
+			this.getAutores();
+		});
+	  }
 }

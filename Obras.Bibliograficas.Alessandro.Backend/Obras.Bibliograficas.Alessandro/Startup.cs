@@ -41,11 +41,11 @@ namespace Obras.Bibliograficas.Alessandro
 
 			services.AddCors(options =>
 			{
-				options.AddPolicy("AllowAllHeadersAndMethods",
+				options.AddPolicy("AllowAll",
 					builder =>
 					{
 						builder
-						//.AllowAnyOrigin()
+						.AllowAnyOrigin()
 						.AllowAnyMethod()
 						.AllowAnyHeader()
 						.AllowCredentials();
@@ -81,7 +81,7 @@ namespace Obras.Bibliograficas.Alessandro
 				app.UseDeveloperExceptionPage();
 			}
 
-			app.UseCors("AllowAllHeadersAndMethods");
+			app.UseCors("AllowAll");
 
 			app.UseMvc();
 
